@@ -18,7 +18,7 @@ const saveProjects = (title, setTitle, setTraining) =>{
 }
 
 const editProject = (trainingId, title , setTraining , setTitle , setEditing) =>{
-    axios.post('https://final-node-isba.onrender.comeditProject',{_id:trainingId, title})
+    axios.post('https://final-node-isba.onrender.com/editProject',{_id:trainingId, title})
     .then((data) => {
         console.log(data);
         setTitle("")
